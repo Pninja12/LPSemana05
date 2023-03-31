@@ -1,5 +1,4 @@
 ﻿using System;
-using System;
 using System.Diagnostics;
 using System.Threading;
 
@@ -18,7 +17,8 @@ namespace Tempo
             Thread.Sleep(300); 
             crono1.Stop();
             crono2.Stop();
-            Console.WriteLine($"{crono1.Elapsed.Seconds}:{crono1.Elapsed.Milliseconds / 10}");
+            Console.WriteLine($"Cronómetro 1 -> {String.Format("{0:0.00}", crono1.Elapsed.Seconds)}");
+            Console.WriteLine($"Cronómetro 2 -> {String.Format("{0:0.00}", crono2.Elapsed.Seconds)}");
 
         }
     }
